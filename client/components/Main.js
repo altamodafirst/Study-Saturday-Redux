@@ -16,7 +16,7 @@ export default class Main extends React.Component {
         </div>
         <Switch>
           <Route exact path="/" component={StudentList} />
-          {/* add your Route here! */}
+          <Route exact path={`/students/:id`} component={SingleStudent} />
         </Switch>
       </Router>
     );

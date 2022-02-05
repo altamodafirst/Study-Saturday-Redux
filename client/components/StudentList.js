@@ -20,10 +20,14 @@ class StudentList extends React.Component {
             <div>
               <p>Name: {student.fullName}</p>
               <p>Email: {student.email}</p>
+              <Link to={`/students/${student.id}`}>
+                View Details
+                </Link>
             </div>
           </li>
         ))}
       </ul>
+      
     )
 
   }
